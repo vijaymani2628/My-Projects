@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color:darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid ivory;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.726);
+}
+
+.main-container h1 , h2 {
+    font: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-container h1 {
+    color: lightcyan;
+    background-color: rgba(64, 224, 208, 0.171);
+    border-radius: 0.5rem;
+    padding: 5px;
+}
+.prime {
+    margin-bottom: 2rem;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.726);
+}
+
+#btn {
+    color: rgb(6, 1, 10);
+    background-color: rgb(107, 189, 178);
+    width: 50%;
+    padding: 5px;
+    font-weight: bolder;
+    font-style: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 2px #999999 ;
+}
+
+#btn1 {
+    color: black;
+    background-color: crimson;
+    padding: 5px;
+    width: 50%;
+    margin-top: 4px;
+    font-style: inherit;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 2px #999999 ;
+    margin-top: 1rem;
+
+}
+
+.main-container h2 {
+    margin-top: 2rem;
+    color: aqua;
+}
+
+#btn :hover {
+    background-color: cornsilk;
+}
+
+#btn:active {
+    background-color: cornsilk;
+    transform: translateY(4px);
+}
+
+
+#btn1 :hover {
+    background-color: cornsilk;
+}
+
+#btn1:active {
+    background-color: cornsilk;
+    transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
