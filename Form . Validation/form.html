@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form Validation</title>
+    <!-- Required meta tags -->
+
+    <!-- Bootstrap CSS -->
+    <!-- <style>
+        .myip{
+            width: 100%
+        }
+        .new-class{
+            width: 50%
+        }
+
+
+        .course-list{
+            height: 100px;
+            background-color: bisque;
+            display: none;
+        }
+
+        .show{
+            display: block;
+        }
+    </style> -->
+   <link rel="stylesheet" href="form.css">
+</head>
+  <body>
+      <br><br>
+
+    <div class="container">
+
+        <div>
+            <label for="fname">First Name : </label>
+            <input class="myip" type="text" id="fname" placeholder="Enter the Fname" autocomplete="off">
+        </div><br>
+        <div>
+            <label for="fname">Last Name : </label>
+            <input type="text" id="lname" placeholder="Enter the Lname" autocomplete="off">
+        </div><br>
+        <div>
+            <label for="fname">Password : </label>
+            <input type="password" id="password" placeholder="Enter the Password" autocomplete="off">
+        </div><br>
+        <div>
+            <label for="fname">Data Of Birth  : </label>
+            <input type="date" id="dob" placeholder="Enter the Dob" autocomplete="off">
+        </div><br>
+        <div>
+            <button type="button" id="submit" style="color:white; background-color: blue; padding-left: 20px; padding-right: 20px; margin: p5x;">Submit</button>
+            <button type="button" onclick="Reset()">Reset</button>
+        </div><br>
+        <div>
+            <label for="form no"> Form No : </label>
+            <input type="text" id="formno">
+            <button type="button" id="edit">Edit</button>
+        </div>
+
+
+    <script src="form.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
