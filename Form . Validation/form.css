@@ -9,16 +9,12 @@ body {
 }
 
 .container {
-    
-}
-
-form {
-    background-color: rgb(100, 237, 203);
+    background-color: rgb(85, 37, 95);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 50px;
     width: 100%;
-    margin: auto;
-
+    padding: 50px 20px;
+    justify-items: center;
 }
+
+
+
