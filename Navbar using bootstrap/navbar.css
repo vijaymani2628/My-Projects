@@ -1,0 +1,16 @@
+ul li a:hover {
+    color: darkmagenta;
+}
+ul li:hover{
+    transform: scale(1.2);
+    transition: transform 0.6s;
+}
+.dropdown-menu a:hover {
+    color: darkblue;
+}
+header {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
