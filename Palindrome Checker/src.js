@@ -2,27 +2,25 @@ const check = (() => {
     var input = document.getElementById("inp1").value;
     var data = "";
 
-    input.toUpperCase();
-
-    
-if(input == "") {
-    document.getElementById("h2").innerHTML = "Please enter the Word";
-} else {
-
-    for(var i=input.length;i>=1;i--) {
-
-        data = data + input[i-1];
-
+    if(input == "") {
+        document.getElementById("h2").innerHTML = "Please enter the word";
     }
-    
+
+for(var i=input.length;i>=1;i--) {
+
+    let value = input.toUpperCase()
+
+        data = data + value[i-1];
+
+        if(data === value) {
+            document.getElementById("h2").innerHTML = `${data} => is Palindrome`;
+        } else {
+            document.getElementById("h2").innerHTML = `${data} => is not Palidrome`;
+        }
+
 }
-    
 
-    if(data == input) {
-        document.getElementById("h2").innerHTML = "This word is Palindrome";
-    } else {
-        document.getElementById("h2").innerHTML = "This word is not Palindrome";
-    }
+input = "";
 
 });
 
