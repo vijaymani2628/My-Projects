@@ -20,7 +20,5 @@ for(var i=input.length;i>=1;i--) {
 
 }
 
-input = "";
-
 });
 
