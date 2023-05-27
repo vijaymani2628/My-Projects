@@ -13,12 +13,15 @@ for(var i=input.length;i>=1;i--) {
         data = data + value[i-1];
 
         if(data === value) {
-            document.getElementById("h2").innerHTML = `${data} => is Palindrome`;
+            document.getElementById("h2").innerHTML = `${value} => is Palindrome`;
         } else {
-            document.getElementById("h2").innerHTML = `${data} => is not Palidrome`;
+            document.getElementById("h2").innerHTML = `${value} => is not Palidrome`;
         }
 
 }
 
+
 });
+
+
 
