@@ -35,3 +35,36 @@ body {
     border: 2px solid wheat;
 }
 
+input , button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+input {
+    margin-top: 8rem;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 4px 10px;background-color: blanchedalmond;
+}
+
+button {
+    margin-top: 2rem;
+    padding: 4px;
+    width: 25%;
+    border: 2px solid cadetblue;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkcyan;
+    border-bottom: 2px solid burlywood;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s;
+}
