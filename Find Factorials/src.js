@@ -12,12 +12,14 @@ btn.addEventListener("click" , (() => {
            
         }
     
-        if(value == 0) {
-            document.getElementById("h2").innerHTML = `Can't find the Factorial`;
-        } else if (value == 1) {
-            document.getElementById("h2").innerHTML = `${value}'s Factorial always can be ${value}`;
-        } else {
-            document.getElementById("h2").innerHTML = `${value} Factorial is ${factorial}`;
+        if(value === 0) {
+            document.getElementById("h2").innerHTML = `"Can't find the Factorial!"`;
+        } else if (value === 1) {
+            document.getElementById("h2").innerHTML = `"${value}'s Factorial always can be ${value}"`;
+        } else if (value === "") {
+            document.getElementById("h2").innerHTML = `"Please Enter the value!"`;
+        }else {
+            document.getElementById("h2").innerHTML = `"${value} Factorial is ${factorial}"`;
         }
 
 })
