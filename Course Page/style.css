@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.5rem;
+    background-color: wheat;
+    margin: auto;
+}
+
+section h2 {
+    text-decoration: underline;
+    font-size: 1.8rem;
+    color: brown;
+}
+
+section ol li {
+    margin-top: 10px;
+}
+
+section h3 {
+    color: blue;
+}
+
+section p , ol , h3 , span , h2 {
+    margin-left: 1rem;
+}
+
+section p::first-letter {
+    font-size: 2rem;
+}
+
+.html {
+    background-color: orange;
+}
+
+.css {
+    background-color: mediumblue;
+}
+
+.bootstrap {
+    background-color: green;
+}
+
+
+.javascript {
+    background-color: rgb(201, 201, 20);
+}
+
+
+.reactjs {
+    background-color: purple;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+ol li {
+    font-size: 1.2rem;
+}
+
+header , footer {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
+footer {
+    font-size: 1.5rem;
+    position: sticky;
+    bottom: 0;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-around;
+    word-spacing: 5px;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: beige;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+section a:hover {
+    color: whitesmoke;
+    background-color: #333;
+    transform: scale(1.6);
+    transition: transform 0.4s;
+    font-size: 25px;
+}
+
+
+
+
