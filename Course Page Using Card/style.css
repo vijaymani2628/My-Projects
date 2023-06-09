@@ -86,6 +86,7 @@ main {
     border: 5px solid red;
 }
 
+
 .card figure {
     display: flex;
     flex-flow: column nowrap;
