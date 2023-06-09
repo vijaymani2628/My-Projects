@@ -1,0 +1,175 @@
+/* Reaset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* Scroll bahaviour */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.5rem;
+    min-height: 300vh;
+    background-color: #7ac9cc;
+    background-image: radial-gradient(whitesmoke,#7ac9cc);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    background-color: #808080;
+    color: whitesmoke;
+    text-align: center;
+    top: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-bottom: 2px solid #333;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover , nav a:focus {
+    color: hsla(0, 0%, 7%, 0.959);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Card */
+
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%,350px);
+    background-color: #cbd5e1;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:target {
+    border: 2px solid green;
+    box-shadow: 0 0 40px solid rgba(211, 4, 4, 0.89);
+    outline: 2px solid black;
+    outline-offset: 0.5rem;
+    background-color: antiquewhite;
+}
+
+.card img:is([alt]) {
+    border: 5px solid red;
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card img {
+    border: 5px double #333;
+    border-radius: 50%;
+    outline: 2px dashed rgba(4, 57, 201, 0.932);
+}
+
+.card figcaption {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+/* Small Device */
+
+@media screen and (min-width:576px) {
+    main {
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
+
+    .card {
+        width: min(100%,400px);
+    }
+
+}
+
+/* Medium Device */ 
+
+@media screen and (min-width:768px) {
+
+    .card {
+        width: min(100%,325px);
+    }
+
+    .card figure {
+        flex-flow: column-reverse;
+    }
+
+    .card p {
+        margin-top: 1rem;
+    }
+}
+
+/* Large Device  */
+
+@media screen and (min-width : 992px ) {
+    .card {
+        width: min(100%,400px);
+    }
+
+    .card:nth-child(2) {
+        order: -1;
+    }
+}
+
+/* Xtra Large */ 
+
+@media screen and (min-width:1200px) {
+    .card {
+        width: min(33%-1rem,500px);
+    }
+}
+
+
+/* Mobile Devices */
+
+@media screen and (max-height:425px) and (min-aspect-ratio:7/4) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-flow: row nowrap;
+    }
+}
